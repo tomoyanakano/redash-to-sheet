@@ -1,5 +1,7 @@
-import hello from "./hello";
+import { IRedashService, RedashService } from "./redash/redashService";
+import { IQueryService, QueryService } from "./query/queryService";
 
-const main = () => {
-  hello();
-};
+const apiService: IRedashService = new RedashService("APIキー", "https://endpoint.com");
+const queryService: IQueryService = new QueryService(apiService);
+
+

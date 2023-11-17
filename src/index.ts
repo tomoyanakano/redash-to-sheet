@@ -7,7 +7,7 @@ import { IRefreshSheetsUseCase, RefreshSheetsUseCase } from "./usecases/refreshS
 const redashService: IRedashService = new RedashService("API Key", "https://endpoint.com");
 const queryService: IQueryService = new QueryService(redashService);
 const sheetService: ISheetService = new SheetService();
-const sheetConfigurationService: ISheetConfigurationService = new SheetConfigurationService("index");
+const sheetConfigurationService: ISheetConfigurationService = new SheetConfigurationService("config");
 
 
 const refreshSheetsUseCase: IRefreshSheetsUseCase = new RefreshSheetsUseCase(

@@ -18,7 +18,7 @@
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-typescript": "^7.21.4",
     "@google/clasp": "^2.4.2",
-    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/google-apps-script": "^1.0.60",
     "@types/node": "^20.4.4",

@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^2.4.2
     version: 2.4.2
   '@rollup/plugin-babel':
-    specifier: ^6.0.3
-    version: 6.0.3(@babel/core@7.21.4)(rollup@3.20.5)
+    specifier: ^6.0.4
+    version: 6.0.4(@babel/core@7.21.4)(rollup@3.20.5)
   '@rollup/plugin-node-resolve':
     specifier: ^15.0.2
     version: 15.0.2(rollup@3.20.5)
@@ -1430,13 +1430,13 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@rollup/plugin-babel@6.0.3(@babel/core@7.21.4)(rollup@3.20.5):
-    resolution: {integrity: sha512-fKImZKppa1A/gX73eg4JGo+8kQr/q1HBQaCGKECZ0v4YBBv3lFqi14+7xyApECzvkLTHCifx+7ntcrvtBIRcpg==}
+  /@rollup/plugin-babel@6.0.4(@babel/core@7.21.4)(rollup@3.20.5):
+    resolution: {integrity: sha512-YF7Y52kFdFT/xVSuVdjkV5ZdX/3YtmX0QulG+x0taQOtJdHYzVU61aSSkAgVJ7NOv6qPkIYiJSgSWWN/DM5sGw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
       '@types/babel__core': ^7.1.9
-      rollup: ^1.20.0||^2.0.0||^3.0.0
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       '@types/babel__core':
         optional: true

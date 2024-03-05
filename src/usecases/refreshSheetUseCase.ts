@@ -3,7 +3,7 @@ import { ISheetService } from "../sheet/sheetService";
 import { ISheetConfigurationService } from "../sheet/sheetConfigurationService";
 
 export interface IRefreshSheetsUseCase {
-  execute(): Promise<void>;
+  execute({ isAll }: { isAll: boolean }): Promise<void>;
 }
 
 export class RefreshSheetsUseCase implements IRefreshSheetsUseCase {
@@ -22,12 +22,15 @@ export class RefreshSheetsUseCase implements IRefreshSheetsUseCase {
   }
 
   // Executes the use case to refresh data in sheets based on configurations
-  public async execute(): Promise<void> {
+  public async execute({ isAll }: { isAll?: boolean }): Promise<void> {
     const sheetConfigs =
       this.sheetConfigurationService.getSheetConfigurations();
 
     for (const config of sheetConfigs) {
       try {
+        if (!config.isEnabled && !isAll) {
+          continue;
+        }
         // Retrieve the query result
         const queryResult = await this.queryService.fetchQuery(config.queryId);
         // Find the target sheet to update

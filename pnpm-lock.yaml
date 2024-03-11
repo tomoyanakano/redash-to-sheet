@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^15.0.2
     version: 15.0.2(rollup@3.29.4)
   '@types/google-apps-script':
-    specifier: ^1.0.60
-    version: 1.0.60
+    specifier: ^1.0.82
+    version: 1.0.82
   '@types/node':
     specifier: ^20.11.5
     version: 20.11.5
@@ -1563,8 +1563,8 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/google-apps-script@1.0.60:
-    resolution: {integrity: sha512-eRPxCH6xeC2pTm3uxwtaqY9tIiIAOJhnupE2YYR001xaM0g/jg8rY+s5m9HAYRDrSCrBLahRa7ZVdV7iGbC+4A==}
+  /@types/google-apps-script@1.0.82:
+    resolution: {integrity: sha512-umYZj3h057s/sF3aGo0JDiuXLVkqj2rfu6D+OzHlYjKV1fGCjL62L1tndSxe4h7oiHEEgdubFkOLZ7O6xB3L9g==}
     dev: true
 
   /@types/http-cache-semantics@4.0.4:

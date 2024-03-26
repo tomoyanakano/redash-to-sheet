@@ -25,8 +25,10 @@ This script allows for automatic synchronization of data from Redash into Google
 ### Setup
 
 1. Clone this repository or copy the script files into your Google Apps Script editor.
-2. Replace `'API_KEY'` and `'REDASH_HOST'` in the `main` function with your actual Redash API key and host.
-3. Adjust the `CONFIG_SHEETN_ANE` to the name of your index sheet.
+2. set script properties below.
+    - `API_KEY`: Your Redash API key.
+    - `REDASH_HOST`: The URL of your Redash instance.
+    - `CONFIG_SHEET_NANE`: The name of the index sheet in your Google Sheets document (default: config).
 
 ### Configuration
 
@@ -85,7 +87,7 @@ npm run deploy:prod
 
 ### Usage
 
-After setting up the script, you can run the `refreshSheet` function to start the synchronization process. You can also set up a trigger in Google Apps Script to run this function on a schedule.
+After setting up the script, you can run the `refreshQueries` function to start the synchronization process. You can also set up a trigger in Google Apps Script to run this function on a schedule.
 
 ## Contributing
 

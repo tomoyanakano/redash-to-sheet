@@ -37,6 +37,9 @@ Create an index sheet in your Google Sheets document with the following columns:
 - `ColumnC: queryId`: The ID of the Redash query to fetch data from.
 - `ColumnD: keyColumnIndex`: The index of the column in your sheet that will act as the unique key for data updates.
 
+![CleanShot 2024-03-26 at 11 03 28@2x](https://github.com/tomoyanakano/redash-to-sheet/assets/47712031/2b06d21f-99f7-45c4-8986-004c6861d57c)
+
+
 ### Deployment with Clasp
 
 This project uses Clasp TypeScript Template for deployment.

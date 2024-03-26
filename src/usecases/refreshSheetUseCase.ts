@@ -46,6 +46,8 @@ export class RefreshSheetsUseCase implements IRefreshSheetsUseCase {
             queryResult,
             config.keyColumnIndex,
           );
+
+          console.log(`Sheet updated: ${config.sheetName}`);
         } else {
           console.error(`Sheet not found: ${config.sheetName}`);
         }

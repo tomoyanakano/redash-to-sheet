@@ -26,6 +26,10 @@ const refreshSheetsUseCase: IRefreshSheetsUseCase = new RefreshSheetsUseCase(
   sheetConfigurationService,
 );
 
-const main = (): void => {
-  refreshSheetsUseCase.execute();
+const refreshQueries = (): void => {
+  refreshSheetsUseCase.execute({ isAll: false });
+};
+
+const refreshAllQueries = (): void => {
+  refreshSheetsUseCase.execute({ isAll: true });
 };

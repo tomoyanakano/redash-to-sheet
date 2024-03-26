@@ -32,9 +32,10 @@ This script allows for automatic synchronization of data from Redash into Google
 
 Create an index sheet in your Google Sheets document with the following columns:
 
-- `ColumnA: sheetName`: The name of the sheet where data will be updated.
-- `ColumnB: queryId`: The ID of the Redash query to fetch data from.
-- `ColumnC: keyColumnIndex`: The index of the column in your sheet that will act as the unique key for data updates.
+- `ColumnA: checkbox`: CheckBox to enable/disable the synchronization for the sheet. (executed on `refreshQueries`)
+- `ColumnB: sheetName`: The name of the sheet where data will be updated.
+- `ColumnC: queryId`: The ID of the Redash query to fetch data from.
+- `ColumnD: keyColumnIndex`: The index of the column in your sheet that will act as the unique key for data updates.
 
 ### Deployment with Clasp
 

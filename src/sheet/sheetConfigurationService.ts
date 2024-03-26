@@ -1,4 +1,5 @@
 export interface IConfiguration {
+  isEnabled: boolean;
   sheetName: string;
   queryId: string;
   keyColumnIndex: number;
@@ -24,9 +25,10 @@ export class SheetConfigurationService implements ISheetConfigurationService {
     for (let i = 1; i < values.length; i++) {
       const row = values[i];
       configurations.push({
-        sheetName: row[0],
-        queryId: row[1],
-        keyColumnIndex: row[2],
+        isEnabled: row[0],
+        sheetName: row[1],
+        queryId: row[2],
+        keyColumnIndex: row[3],
       });
     }
 

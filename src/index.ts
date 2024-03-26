@@ -10,9 +10,13 @@ import {
   RefreshSheetsUseCase,
 } from "./usecases/refreshSheetUseCase";
 
-const API_KEY = "";
-const REDASH_HOST = "";
-const CONFING_SHEET_NAME = "";
+const API_KEY =
+  PropertiesService.getScriptProperties().getProperty("API_KEY") || "";
+const REDASH_HOST =
+  PropertiesService.getScriptProperties().getProperty("REDASH_HOST") || "";
+const CONFING_SHEET_NAME =
+  PropertiesService.getScriptProperties().getProperty("CONFIG_SHEET_NAME") ||
+  "config";
 
 const redashService: IRedashService = new RedashService(API_KEY, REDASH_HOST);
 const queryService: IQueryService = new QueryService(redashService);
